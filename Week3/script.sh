@@ -2,5 +2,5 @@
 
 # This is a comment
 
-
-grep processor /proc/cpuinfo | wc -l
+printf "%s\n""The number of CPUs is "
+grep processor /proc/cpuinfo | wc -l 
