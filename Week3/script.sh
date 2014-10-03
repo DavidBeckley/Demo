@@ -2,5 +2,5 @@
 
 # This is a comment
 
-printf "%s\n""The number of CPUs is "
-grep processor /proc/cpuinfo | wc -l 
+cpucnt=$( grep processor /proc/cpuinfo | wc -l ) 
+printf "The number of CPUs is: %s\n" $cpucnt
